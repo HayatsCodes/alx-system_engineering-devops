@@ -5,7 +5,7 @@ x=0
 
 while [ $x -le 12 ]
 do
-	echo $x
+	echo "Hour: $x"
 	y=1
 	while [ $y -le 59 ]
 	do
