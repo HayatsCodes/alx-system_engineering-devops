@@ -2,7 +2,7 @@
 # This script is displaying "Best School" 10 times
 
 x=1
-until [ $x -gt 9]
+until [ $x -gt 9 ]
 do
 	echo "Best School"
 	((x++))
