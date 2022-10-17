@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Stops 4-to_infinity_and_beyond process.
 
-x=$(pgrep -f "bash ./4-to_infinity_and_beyond")
-kill $x
+kill "$(pgrep -f "bash ./4-to_infinity_and_beyond")"
+
