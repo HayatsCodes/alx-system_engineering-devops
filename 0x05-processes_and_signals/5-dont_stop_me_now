@@ -3,4 +3,7 @@
 
 x=$(ps a | grep "bash ./4-to_infinity_and_beyond" | cut -d " " -f 2 | head -n 1)
 
-kill $x
+killing() {
+	kill $x
+}
+killing
