@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 # Displays To infinity and beyond and traps SIGTERM signal
 
-
-sig_nal() {
-	echo "I am invicible!!!"
-}
-trap sig_nal SIGTERM
+trap "echo I am invicible!!!" SIGTERM
 
 while true
 do
