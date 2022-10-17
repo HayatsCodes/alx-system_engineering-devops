@@ -1,10 +1,15 @@
 #!/usr/bin/env bash
 # Displays To infinity and beyond and traps SIGTERM signal
 
-trap "echo I am invicible!!!" SIGTERM
+trap sig_nal SIGTERM
+
+sig_nal()
+{
+    echo "I am invincible!!!"
+}
 
 while true
 do
-	echo "To infinity and beyond"
-	sleep 2
+    echo "To infinity and beyond"
+    sleep 2
 done
