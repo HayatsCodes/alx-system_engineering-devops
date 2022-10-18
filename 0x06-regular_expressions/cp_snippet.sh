@@ -3,4 +3,5 @@
 
 file=$1
 cp example.rb $file
+chmod u+x $file
 vi $file
