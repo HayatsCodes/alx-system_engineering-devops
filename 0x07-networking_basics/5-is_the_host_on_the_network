@@ -4,7 +4,7 @@
 if [ $# -lt 1 ]
 then
     echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+else
+	x=$1
+	ping -c 5 $x
 fi
-x=$1
-
-ping -c 5 $x
