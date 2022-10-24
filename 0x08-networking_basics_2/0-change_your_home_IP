@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# configures an ubuntu server
+search=127.0.0.1
+replace=127.0.0.2
+cp /etc/hosts ~/hosts.new
+sed -i "s/$search/$replace/" ~/hosts.new
+echo -e "8.8.8.8\t\t facebook.com" >> ~/hosts.new 
+cp -f ~/hosts.new /etc/hosts
+
